@@ -1,0 +1,35 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\author{Jos\'e Miguel Leyva De la Cruz}
+\title{Respuestas CP0}
+\begin{document}
+\section{Si $n$ tiene divisores distintos de 1 entonces tiene al menos un divisor menor que $\sqrt{n}$}
+\section{Demuestre que el conjunto de n\'umeros primos es infinito}
+Supongamos lo contrario. Entonces sea $P = {p_1, p_2,...,p_n}$ el conjunto de todos los n\'umeros primos que existen
+\large
+\begin{equation*}
+S = (\prod\limits_{i = 1}^{n} pi) + 1
+\end{equation*}
+\normalsize
+Con $p_i \in P$\\
+Todo n\'umero tiene un divisor primo, entonces existe $p_k \in P$ tal que $p_k | S$\\
+Luego $p_k | S - 1$, ya que $S - 1$ es la multiplicaci\'on de todos los primos que existen. Entonces $p_k | S$ y $p_k | S - 1$ por tanto $p_k | S - (S - 1)$, es decir $p_k | 1$ lo cual solo es posible si $p_k = 1$, pero el $1$ no es un n\'umero primo. \textbf{Contradicci\'on}.
+Por tanto el conjunto de n\'umeros primos es infinitos, ya que para cualquier conjunto finito de primos dado existe un n\'umero primo que no pertencer\'a a dicho conjunto.
+
+\section{Sea a entero, $a \neq 0$ y $c_i$ entero con $1 \leq i \leq n$. Pruebe que si $a|c_i$, $\forall i$, entonces $a | c_1x_1 + c_2x_2 +...+c_nx_n$ para $x_1, x_2,...,x_n$ cualesquiera.}
+
+Si $a|c_i entonces c_i = a * q_i$\\
+\large
+\begin{center}
+$a |  c_1x_1 + c_2x_2 +...+c_nx_n$\\
+$a | aq_1x_1 + aq_2x_2 +...+ a_qn_xn$\\
+$a | a(q_1x_1 + q_2x_2+...+q_nx_n)$
+\end{center}
+\normalsize
+Demostrado
+
+\section{Sea k $\in \mathbb{Z^*}$. Demuestra que $k$ divide al producto de k enteros consecutivos}
+\end{document}
